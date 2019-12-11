@@ -8,7 +8,9 @@
 
 import UIKit
 import CountryPickerView
-
+struct Country {
+    
+}
 class DemoViewController: UITableViewController {
 
     @IBOutlet weak var searchBarPosition: UISegmentedControl!
@@ -39,7 +41,8 @@ class DemoViewController: UITableViewController {
         cpvMain.tag = 1
         cpvTextField.tag = 2
         cpvIndependent.tag = 3
-        
+        cpvMain.showCountryNameInView = true
+
         [cpvMain, cpvTextField, cpvIndependent, cpvInternal].forEach {
             $0?.dataSource = self
         }
@@ -99,7 +102,7 @@ class DemoViewController: UITableViewController {
 }
 
 extension DemoViewController: CountryPickerViewDelegate {
-    func countryPickerView(_ countryPickerView: CountryPickerView, didSelectCountry country: Country) {
+    func countryPickerView(_ countryPickerView: CountryPickerView, didSelectCountry country: CPVCountry) {
         // Only countryPickerInternal has it's delegate set
         let title = "Selected Country"
         let message = "Name: \(country.name) \nCode: \(country.code) \nPhone: \(country.phoneCode)"
@@ -108,9 +111,9 @@ extension DemoViewController: CountryPickerViewDelegate {
 }
 
 extension DemoViewController: CountryPickerViewDataSource {
-    func preferredCountries(in countryPickerView: CountryPickerView) -> [Country] {
+    func preferredCountries(in countryPickerView: CountryPickerView) -> [CPVCountry] {
         if countryPickerView.tag == cpvMain.tag && showPreferredCountries.isOn {
-            var countries = [Country]()
+            var countries = [CPVCountry]()
             ["NG", "US", "GB"].forEach { code in
                 if let country = countryPickerView.getCountryByCode(code) {
                     countries.append(country)

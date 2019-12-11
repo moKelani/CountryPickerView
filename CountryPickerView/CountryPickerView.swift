@@ -56,6 +56,10 @@ public class CountryPickerView: NibView {
         didSet { setup() }
     }
     
+    // Show/Hide the country name on the view.
+    public var showCountryNameInView = true {
+        didSet { setup() }
+    }
     /// Change the font of phone code
     public var font = UIFont.systemFont(ofSize: 17.0) {
         didSet { setup() }
@@ -106,6 +110,12 @@ public class CountryPickerView: NibView {
         flagImageView.image = selectedCountry.flag
         countryDetailsLabel.font = font
         countryDetailsLabel.textColor = textColor
+        
+        if showCountryNameInView,let countryName = selectedCountry.localizedName() {
+            countryDetailsLabel.text = "\(countryName)"
+            return
+        }
+        
         if showPhoneCodeInView && showCountryCodeInView {
             countryDetailsLabel.text = "(\(selectedCountry.code)) \(selectedCountry.phoneCode)"
             return
@@ -116,6 +126,8 @@ public class CountryPickerView: NibView {
         } else {
             countryDetailsLabel.text = nil
         }
+        
+
     }
     
     @IBAction func openCountryPickerController(_ sender: Any) {

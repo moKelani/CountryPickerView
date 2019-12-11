@@ -21,7 +21,7 @@
 },
 {
 "name": "AmericanSamoa",
-"dial_code": "+1684",
+"dial_code": "+1",
 "code": "AS"
 },
 {
@@ -36,17 +36,12 @@
 },
 {
 "name": "Anguilla",
-"dial_code": "+1264",
+"dial_code": "+1",
 "code": "AI"
 },
 {
-"name": "Antarctica",
-"dial_code": "+672",
-"code": "AQ"
-},
-{
 "name": "Antigua and Barbuda",
-"dial_code": "+1268",
+"dial_code": "+1",
 "code": "AG"
 },
 {
@@ -81,7 +76,7 @@
 },
 {
 "name": "Bahamas",
-"dial_code": "+1242",
+"dial_code": "+1",
 "code": "BS"
 },
 {
@@ -96,7 +91,7 @@
 },
 {
 "name": "Barbados",
-"dial_code": "+1246",
+"dial_code": "+1",
 "code": "BB"
 },
 {
@@ -121,7 +116,7 @@
 },
 {
 "name": "Bermuda",
-"dial_code": "+1441",
+"dial_code": "+1",
 "code": "BM"
 },
 {
@@ -196,7 +191,7 @@
 },
 {
 "name": "Cayman Islands",
-"dial_code": "+1345",
+"dial_code": "+1",
 "code": "KY"
 },
 {
@@ -296,7 +291,7 @@
 },
 {
 "name": "Dominica",
-"dial_code": "+1767",
+"dial_code": "+1",
 "code": "DM"
 },
 {
@@ -416,7 +411,7 @@
 },
 {
 "name": "Grenada",
-"dial_code": "+1473",
+"dial_code": "+1",
 "code": "GD"
 },
 {
@@ -426,7 +421,7 @@
 },
 {
 "name": "Guam",
-"dial_code": "+1671",
+"dial_code": "+1",
 "code": "GU"
 },
 {
@@ -461,7 +456,7 @@
 },
 {
 "name": "Holy See (Vatican City State)",
-"dial_code": "+379",
+"dial_code": "+39",
 "code": "VA"
 },
 {
@@ -495,7 +490,7 @@
 "code": "ID"
 },
 {
-"name": "Iran",
+"name": "Iran, Islamic Republic of Persian Gulf",
 "dial_code": "+98",
 "code": "IR"
 },
@@ -526,7 +521,7 @@
 },
 {
 "name": "Jamaica",
-"dial_code": "+876",
+"dial_code": "+1",
 "code": "JM"
 },
 {
@@ -560,9 +555,14 @@
 "code": "KI"
 },
 {
-"name": "Kosovo",
-"dial_code": "+383",
-"code": "XK"
+"name": "Korea, Democratic People's Republic of Korea",
+"dial_code": "+850",
+"code": "KP"
+},
+{
+"name": "Korea, Republic of South Korea",
+"dial_code": "+82",
+"code": "KR"
 },
 {
 "name": "Kuwait",
@@ -716,7 +716,7 @@
 },
 {
 "name": "Montserrat",
-"dial_code": "+1664",
+"dial_code": "+1",
 "code": "MS"
 },
 {
@@ -755,11 +755,6 @@
 "code": "NL"
 },
 {
-"name": "Netherlands Antilles",
-"dial_code": "+599",
-"code": "AN"
-},
-{
 "name": "New Caledonia",
 "dial_code": "+687",
 "code": "NC"
@@ -795,13 +790,8 @@
 "code": "NF"
 },
 {
-"name": "North Korea",
-"dial_code": "+850",
-"code": "KP"
-},
-{
 "name": "Northern Mariana Islands",
-"dial_code": "+1670",
+"dial_code": "+1",
 "code": "MP"
 },
 {
@@ -855,11 +845,6 @@
 "code": "PH"
 },
 {
-"name": "Pitcairn",
-"dial_code": "+64",
-"code": "PN"
-},
-{
 "name": "Poland",
 "dial_code": "+48",
 "code": "PL"
@@ -911,12 +896,12 @@
 },
 {
 "name": "Saint Kitts and Nevis",
-"dial_code": "+1869",
+"dial_code": "+1",
 "code": "KN"
 },
 {
 "name": "Saint Lucia",
-"dial_code": "+1758",
+"dial_code": "+1",
 "code": "LC"
 },
 {
@@ -931,7 +916,7 @@
 },
 {
 "name": "Saint Vincent and the Grenadines",
-"dial_code": "+1784",
+"dial_code": "+1",
 "code": "VC"
 },
 {
@@ -1003,16 +988,6 @@
 "name": "South Africa",
 "dial_code": "+27",
 "code": "ZA"
-},
-{
-"name": "South Georgia and the South Sandwich Islands",
-"dial_code": "+500",
-"code": "GS"
-},
-{
-"name": "South Korea",
-"dial_code": "+82",
-"code": "KR"
 },
 {
 "name": "South Sudan",
@@ -1106,7 +1081,7 @@
 },
 {
 "name": "Trinidad and Tobago",
-"dial_code": "+1868",
+"dial_code": "+1",
 "code": "TT"
 },
 {
@@ -1126,7 +1101,7 @@
 },
 {
 "name": "Turks and Caicos Islands",
-"dial_code": "+1649",
+"dial_code": "+1",
 "code": "TC"
 },
 {
@@ -1186,12 +1161,12 @@
 },
 {
 "name": "Virgin Islands, British",
-"dial_code": "+1284",
+"dial_code": "+1",
 "code": "VG"
 },
 {
 "name": "Virgin Islands, U.S.",
-"dial_code": "+1340",
+"dial_code": "+1",
 "code": "VI"
 },
 {
