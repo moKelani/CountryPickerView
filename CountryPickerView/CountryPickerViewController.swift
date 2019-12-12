@@ -11,10 +11,10 @@ import UIKit
 public class CountryPickerViewController: UITableViewController {
 
     public var searchController: UISearchController?
-    fileprivate var searchResults = [Country]()
+    fileprivate var searchResults = [CPVCountry]()
     fileprivate var isSearchMode = false
     fileprivate var sectionsTitles = [String]()
-    fileprivate var countries = [String: [Country]]()
+    fileprivate var countries = [String: [CPVCountry]]()
     fileprivate var hasPreferredSection: Bool {
         return dataSource.preferredCountriesSectionTitle != nil &&
             dataSource.preferredCountries.count > 0
@@ -47,7 +47,7 @@ extension CountryPickerViewController {
         if !showOnlyPreferredSection {
             let countriesArray = countryPickerView.countries
             
-            var groupedData = Dictionary<String, [Country]>(grouping: countriesArray) {
+            var groupedData = Dictionary<String, [CPVCountry]>(grouping: countriesArray) {
                 let name = $0.localizedName(dataSource.localeForCountryNameInList) ?? $0.name
                 return String(name.capitalized[name.startIndex])
             }
@@ -214,7 +214,7 @@ extension CountryPickerViewController: UISearchResultsUpdating {
             isSearchMode = true
             searchResults.removeAll()
             
-            var indexArray = [Country]()
+            var indexArray = [CPVCountry]()
             
             if showOnlyPreferredSection && hasPreferredSection,
                 let array = countries[dataSource.preferredCountriesSectionTitle!] {
@@ -284,7 +284,7 @@ class CountryPickerViewDataSourceInternal: CountryPickerViewDataSource {
         self.view = view
     }
     
-    var preferredCountries: [Country] {
+    var preferredCountries: [CPVCountry] {
         return view.dataSource?.preferredCountries(in: view) ?? preferredCountries(in: view)
     }
     
