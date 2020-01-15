@@ -20,9 +20,21 @@ public struct CPVCountry: Equatable {
         return locale.localizedString(forRegionCode: code)
     }
     public var flag: UIImage {
-        return UIImage(named: "CountryPickerView.bundle/Images/\(code.uppercased())",
-            in: Bundle(for: CountryPickerView.self), compatibleWith: nil)!
+        return emojiFlag(countryCode: code).image()!
+           
     }
+}
+
+
+func emojiFlag(countryCode: String?) -> String {
+    var string = ""
+    //var country = countryCode.uppercaseString
+    for e in countryCode!.unicodeScalars {
+        
+        let unicode = UnicodeScalar(127397 + e.value)
+        string += "\(unicode!)"
+    }
+    return string
 }
 
 public func ==(lhs: CPVCountry, rhs: CPVCountry) -> Bool {
